@@ -1,12 +1,5 @@
 # Administrasi-Sistem-Jaringan-MikroTik-
 
-Proyek ini adalah praktik **Uji Kompetensi Keahlian (UKK) Teknik Komputer dan Jaringan** (Kode KM.3066, Tahun Pelajaran 2025/2026). Dua router MikroTik di **Kantor Pusat Jakarta** dan **Kantor Cabang Surabaya** dihubungkan lewat tunnel **L2TP/IPsec** melalui internet, sehingga jaringan lokal kedua kantor bisa saling berkomunikasi.
-
-> **Catatan:** angka `212` dan `112` pada alamat IP di bawah adalah contoh untuk **nomor absen 12**.
-> Rumusnya: Jakarta = `192.(200 + absen)`, Surabaya = `192.(100 + absen)`.
-
----
-
 ## Daftar Isi
 1. [Topologi](#-topologi)
 2. [Alat dan Bahan](#-alat-dan-bahan)
@@ -286,4 +279,3 @@ Dokumentasi ini hanya membahas konfigurasi jaringan dan pengujiannya. Bagian ber
 
 ---
 
-<p align="center"><b>Selamat dan sukses! 🎉</b></p>
