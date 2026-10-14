@@ -262,7 +262,7 @@ Pengujian dilakukan dengan perintah `ping` lewat **CMD** dari PC client, lalu di
 ## Hasil yang Diharapkan
 
 - Tunnel L2TP/IPsec antara Jakarta dan Surabaya berhasil terbentuk.
-- Routing static aktif di kedua router (flag `AS`).
+- Routing static aktif di kedua router.
 - PC Kasir kedua kantor saling terhubung dan bisa mengakses internet.
 - Server POST di Jakarta bisa diakses dari PC Kasir Surabaya.
 
