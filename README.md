@@ -1,4 +1,4 @@
-# 🌐 Administrasi Sistem Jaringan: VPN L2TP Site-to-Site MikroTik
+# Administrasi-Sistem-Jaringan-MikroTik-
 
 Proyek ini adalah praktik **Uji Kompetensi Keahlian (UKK) Teknik Komputer dan Jaringan** (Kode KM.3066, Tahun Pelajaran 2025/2026). Dua router MikroTik di **Kantor Pusat Jakarta** dan **Kantor Cabang Surabaya** dihubungkan lewat tunnel **L2TP/IPsec** melalui internet, sehingga jaringan lokal kedua kantor bisa saling berkomunikasi.
 
@@ -7,7 +7,7 @@ Proyek ini adalah praktik **Uji Kompetensi Keahlian (UKK) Teknik Komputer dan Ja
 
 ---
 
-## 📑 Daftar Isi
+## Daftar Isi
 1. [Topologi](#-topologi)
 2. [Alat dan Bahan](#-alat-dan-bahan)
 3. [Persiapan Fisik](#-persiapan-fisik)
@@ -19,13 +19,13 @@ Proyek ini adalah praktik **Uji Kompetensi Keahlian (UKK) Teknik Komputer dan Ja
 
 ---
 
-## 🗺️ Topologi
+## Topologi
 
 <img width="673" height="443" alt="Topologi" src="https://github.com/user-attachments/assets/1586f1aa-4b81-49cc-af04-05520f2c2de1" />
 
 ---
 
-## 🧰 Alat dan Bahan
+## Alat dan Bahan
 
 | No | Item | Jumlah |
 |----|------|--------|
@@ -43,7 +43,7 @@ Proyek ini adalah praktik **Uji Kompetensi Keahlian (UKK) Teknik Komputer dan Ja
 
 ---
 
-## 🔌 Persiapan Fisik
+## Persiapan Fisik
 
 1. Siapkan semua perangkat sesuai daftar di atas.
 2. Pasang konektor RJ-45 pada kabel UTP, lalu uji kabel dengan cable tester.
@@ -51,7 +51,7 @@ Proyek ini adalah praktik **Uji Kompetensi Keahlian (UKK) Teknik Komputer dan Ja
 
 ---
 
-## 📋 Rencana Pengalamatan
+## Rencana Pengalamatan
 
 ### Router Jakarta
 | Keterangan | Interface | Alamat IP |
@@ -77,7 +77,7 @@ DNS untuk kedua PC: DNS router sebagai Preferred dan `8.8.8.8` sebagai Alternate
 
 ---
 
-## 🏢 Konfigurasi Router Jakarta (L2TP Server)
+## Konfigurasi Router Jakarta (L2TP Server)
 
 Urutan pengerjaan: **Hostname → IP Address → DHCP Client → NAT → L2TP Server → Routing Static**
 
@@ -154,7 +154,7 @@ Gateway yang dipakai adalah IP tunnel milik Surabaya.
 
 ---
 
-## 🏬 Konfigurasi Router Surabaya (L2TP Client)
+## Konfigurasi Router Surabaya (L2TP Client)
 
 Urutan pengerjaan: **Hostname → IP Address → DHCP Client → NAT → L2TP Client → Routing Static**
 
@@ -218,7 +218,7 @@ Gateway yang dipakai adalah IP tunnel milik Jakarta.
 
 ---
 
-## 🧪 Pengujian
+## Pengujian
 
 Pengujian dilakukan dengan perintah `ping` lewat **CMD** dari PC client, lalu dilanjutkan dengan memeriksa status tunnel dan route di router.
 
@@ -266,7 +266,7 @@ Pengujian dilakukan dengan perintah `ping` lewat **CMD** dari PC client, lalu di
 
 ---
 
-## ✅ Hasil yang Diharapkan
+## Hasil yang Diharapkan
 
 - Tunnel L2TP/IPsec antara Jakarta dan Surabaya berhasil terbentuk.
 - Routing static aktif di kedua router (flag `AS`).
@@ -275,7 +275,7 @@ Pengujian dilakukan dengan perintah `ping` lewat **CMD** dari PC client, lalu di
 
 ---
 
-## 📝 Catatan Tambahan
+## Catatan Tambahan
 
 Dokumentasi ini hanya membahas konfigurasi jaringan dan pengujiannya. Bagian berikut ada di soal UKK tetapi **belum dibahas** karena keterbatasan resource:
 
